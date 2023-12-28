@@ -1,0 +1,327 @@
+/* Inter Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800;900&display=swap");
+
+:root {
+  --primary-color: #6c35bc;
+  --secondary-color: #f3edfa;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f4f6fa !important;
+  font-family: "Inter";
+}
+/******************************************** Custom All Style Here ******************************************** */
+.primary__btn {
+  border: none;
+  border-radius: 8px;
+  background: var(--primary-color);
+  padding: 12px 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s all;
+}
+.primary__btn:hover {
+  background: #55249f;
+}
+.secondary__btn {
+  color: var(--primary-color);
+  background: transparent;
+  padding: 12px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: 1px solid var(--secondary-color);
+  transition: 0.3s all;
+}
+.secondary__btn:hover {
+  background-color: var(--secondary-color);
+}
+.action__btn {
+  color: #bab6d8;
+  border: 1px solid #e5e3f4;
+  font-size: 22px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  transition: 0.3s all;
+}
+.action__btn:hover {
+  background-color: var(--secondary-color);
+}
+.secondary__color {
+  color: #6d6e70;
+}
+.secondary__bg {
+  border-radius: 10px;
+  background: #5e179010;
+}
+.w-fit {
+  width: fit-content;
+}
+.primary__color {
+  color: var(--primary-color);
+}
+.font__15 {
+  font-size: 15px;
+}
+.list__style__none {
+  list-style: none;
+}
+.gradient {
+  background: linear-gradient(90deg, #342f79 6.32%, #5d1790 94.21%);
+}
+.divider {
+  opacity: 0.9;
+  background: linear-gradient(
+    90deg,
+    rgba(171, 198, 207, 0) 0%,
+    #abc6cf 48.44%,
+    rgba(171, 198, 207, 0) 100%
+  ) !important;
+  height: 0.5px !important;
+}
+.primary__border {
+  border: 1px solid var(--primary-color);
+}
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/******************************************** Custom All Style End ******************************************** */
+/******************************************** header Custom All Style Here ******************************************** */
+.profile__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.top__navbar ul li a {
+  color: #af96c3;
+  font-size: 14px;
+}
+
+.topnav__button {
+  color: #af96c3;
+  background: transparent;
+  padding: 6px 20px;
+  border-radius: 5px;
+  border: 0.5px solid #af96c3;
+}
+.top__navbar .dropdown-menu {
+  z-index: 10000;
+}
+.side__navbar {
+  padding: 240px 40px 0px 0px;
+  width: fit-content;
+  border-right: 0.5px dashed rgba(109, 110, 112, 0.5);
+  opacity: 0.6;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow-x: hidden;
+}
+.side__bg {
+  border: 0.5px dashed rgba(109, 110, 112, 0.5);
+  background: linear-gradient(180deg, #602c80 0%, #2e2f78 100%);
+  opacity: 1 !important;
+}
+.arrow__btn {
+  position: absolute;
+  right: 0;
+  margin-top: -50px;
+  background-color: #e5e0ef;
+  padding: 5px 15px;
+  font-weight: 800;
+  cursor: pointer;
+  color: var(--primary-color);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.active__sideNav {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/******************************************** header Custom All Style End ******************************************** */
+
+/******************************************** Main Section All Style Here ******************************************** */
+main {
+  margin-top: 180px;
+  padding-left: 250px;
+  padding-right: 80px;
+}
+.main__container {
+  margin-top: 120px;
+}
+main .dropdown {
+  position: unset !important;
+}
+.studio__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+/******************************************** Main Section All Style End ******************************************** */
+
+/*****************************************************************************************************************************
+                                                  Gellary Page All Style Here 
+ **************************************************************************************************************************** */
+
+.gellary__header .side__navbar {
+  padding: 180px 40px 0px 0px;
+}
+.gellary__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.image__actions {
+  position: absolute;
+  right: -10px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  gap: 5px;
+}
+.gellary__items {
+  border-radius: 12px;
+  background: linear-gradient(
+    270deg,
+    #202020 4.74%,
+    rgba(32, 32, 32, 0) 86.21%
+  );
+  box-shadow: 2px 2px 46px 19px rgba(18, 15, 36, 0.09);
+}
+.gellary__btn {
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+.gellary__btn .action__icon {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 15px;
+  border: none;
+  z-index: 10;
+}
+.gellary__btn .btn__title {
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  position: relative;
+  left: 20px;
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
+  z-index: -0;
+}
+.gellary__btn:hover .btn__title {
+  visibility: unset !important;
+  left: 0;
+}
+/*****************************************************************************************************************************
+                                                  Gellary Page All Style End 
+ **************************************************************************************************************************** */
+
+/******************************************* All Responsive CSS Here *****************************************************/
+
+@media screen and (max-width: 576px) {
+  .top__hidden__nav {
+    display: unset !important;
+  }
+  .navbar-brand img {
+    width: 200px;
+  }
+  .top__navbar {
+    display: none;
+  }
+  main {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 100px;
+  }
+  .navbar-nav .nav__profile {
+    display: unset !important;
+  }
+  .studio__grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .gellary__grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .sm-flex-column {
+    flex-direction: column !important;
+  }
+  .bottom__template {
+    overflow: scroll !important;
+  }
+  .side__navbar {
+    display: none;
+  }
+    .gellary__btn .action__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .navbar-nav .nav-item .nav__profile {
+    display: unset !important;
+  }
+  .side__navbar {
+    padding-top: 180px !important;
+  }
+  .gellary__header .side__navbar {
+    padding-top: 140px !important;
+  }
+  .studio__grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .gellary__grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .bottom__template {
+    overflow: scroll !important;
+  }
+  main {
+    margin-top: 160px;
+    padding-left: 200px;
+    padding-right: 10px;
+  }
+  .main__container{
+    margin-top: 100px;
+  }
+  .gellary__items{
+    z-index: -1;
+  }
+  .md-flex-cloumn{
+    flex-direction: column;
+    align-items: start !important;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width:2000px) {
+  .gellary__btn .action__icon {
+    width: 50px;
+    height: 50px;
+  }
+}

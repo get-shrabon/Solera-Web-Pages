@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOLERA</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top__navbar py-2 gradient">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-between align-items-center">
+            <ul class="gap-4 d-flex align-items-center list__style__none mb-0">
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Documentation
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span
+                ></a>
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >API Rederence
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span
+                ></a>
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Examples
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span
+                ></a>
+              </li>
+            </ul>
+
+            <div class="dropdown">
+              <button
+                class="topnav__button dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./assets/images/icons/Production.png" alt="" />
+                Production
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Dropdown item</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar bg-white navbar-expand-lg main__navbar">
+        <div class="container-fluid">
+            <div class="dropdown d-none top__hidden__nav">
+              <button
+                class="topnav__button dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+               <span class="navbar-toggler-icon"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img src="./assets/images/icons/Dashboard.png" alt="" />
+              Dashboard</a></li>
+                <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-qrcode"></i></span> Studio</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"><img src="./assets/images/icons/Renders.png" alt="" /> Renders</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><img src="./assets/images/icons/Integrations.png" alt="" />
+              Integrations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><img src="./assets/images/icons/Workflow.png" alt="" />
+              Workflow</a>
+                </li>
+              </ul>
+            </div>
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/images/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <img class="rounded-circle" src="./assets/images/profile.png" alt="">
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <img class="w-50" src="./assets/images/logo.png" alt="" />
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end align-items-center gap-3 flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <button class="primary__btn">Upgrade</button>
+                </li>
+                <li class="nav-item">
+                  <a class="secondary__btn" href="#"
+                    ><i class="fa-solid fa-circle-question fa-2xl"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="secondary__btn" href="#"
+                    ><i class="fa-solid fa-bell fa-2xl"></i
+                  ></a>
+                </li>
+                <li
+                  class="nav-item dropdown d-flex nav__profile align-items-center gap-2 ms-4"
+                >
+                  <p class="secondary__color font__15 mb-0">Name Profile</p>
+                  <div>
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="./assets/images/profile.png"
+                        class="profile__image"
+                        alt=""
+                      />
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Setting</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!------------------------------------- Side navbar --------------------------------------->
+      <div id="side__bar" class="side__navbar bg-white">
+        <span id="arrow" class="arrow__btn"
+          ><i class="fa-solid fa-angle-left"></i
+        ></span>
+        <ul
+          class="side__nav__items list__style__none d-flex flex-column gap-4 pl-0"
+        >
+          <li>
+            <a
+              class="text-decoration-none d-flex align-items-center secondary__color gap-2"
+              href="#"
+              ><img src="./assets/images/icons/Dashboard.png" alt="" />
+              Dashboard</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none d-flex align-items-center active__sideNav secondary__color gap-2"
+              href="#"
+              ><span><i class="fa-solid fa-qrcode"></i></span> Studio</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none d-flex align-items-center secondary__color gap-2"
+              href="#"
+              ><img src="./assets/images/icons/Renders.png" alt="" /> Renders</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none d-flex align-items-center secondary__color gap-2"
+              href="#"
+              ><img src="./assets/images/icons/Integrations.png" alt="" />
+              Integrations</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none d-flex align-items-center secondary__color gap-2"
+              href="#"
+              ><img src="./assets/images/icons/Workflow.png" alt="" />
+              Workflow</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!------------------------------------------ Main Content Here ----------------------------------------------->
+    <main id="main">
+      <div class="container-fluid">
+        <div
+          class="section__header sm-flex-column d-flex justify-content-between align-items-center py-3"
+        >
+          <div class="d-flex align-items-center gap-3 sm-flex-column">
+            <h3 class="primary__color fw-bold secondary__bg w-fit p-2">
+              Studio
+            </h3>
+            <p class="text-black mb-0">
+              The studio is where you manage templates and render video:
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-3 sm-flex-column">
+            <p class="secondary__color mb-0">Filter by :</p>
+            <div class="dropdown">
+              <button
+                class="py-2 px-3 rounded primary__border fw-bold dropdown-toggle primary__color"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Category
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Dropdown item</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="py-2 px-3 rounded primary__border fw-bold dropdown-toggle primary__color"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                By month
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Dropdown item</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="divider w-100 my-3"></div>
+        <div class="d-flex align-items-center justify-content-between sm-flex-column">
+          <h5 class="fw-bold">Templates you might like</h5>
+          <div class="d-flex align-items-center gap-3">
+            <a
+              class="text-decoration-none bg-white py-2 px-3 rounded-circle shadow primary__color"
+              href="#"
+              ><i class="fa-solid fa-angle-left"></i
+            ></a>
+            <a
+              class="text-decoration-none bg-white py-2 px-3 rounded-circle shadow primary__color"
+              href="#"
+              ><i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="studio__grid mt-4">
+          <div>
+            <img class="shadow w-100" src="./assets/images/imgOne.png" alt="" />
+            <p class="text-center my-2 fw-semibold">Intro Car Streaming</p>
+          </div>
+          <div>
+            <img class="shadow w-100" src="./assets/images/imgTwo.png" alt="" />
+            <p class="text-center my-2 fw-semibold">Tutorial automotriz</p>
+          </div>
+          <div>
+            <img
+              class="shadow w-100"
+              src="./assets/images/imgThree.png"
+              alt=""
+            />
+            <p class="text-center my-2 fw-semibold">Today’s Deal</p>
+          </div>
+          <div>
+            <img
+              class="shadow w-100"
+              src="./assets/images/imgFour.png"
+              alt=""
+            />
+            <p class="text-center my-2 fw-semibold">Car Walk Around</p>
+          </div>
+          <div>
+            <img
+              class="shadow w-100"
+              src="./assets/images/imgFive.png"
+              alt=""
+            />
+            <p class="text-center my-2 fw-semibold">Automotive Testimonial</p>
+          </div>
+          <div>
+            <img class="shadow w-100" src="./assets/images/imgSix.png" alt="" />
+            <p class="text-center my-2 fw-semibold">Best Car For Sale</p>
+          </div>
+          <div>
+            <img
+              class="shadow w-100"
+              src="./assets/images/imgSeven.png"
+              alt=""
+            />
+            <p class="text-center my-2 fw-semibold">Car Dealer Sale</p>
+          </div>
+          <div>
+            <img
+              class="shadow w-100"
+              src="./assets/images/imgEight.png"
+              alt=""
+            />
+            <p class="text-center my-2 fw-semibold">Car Dealer Slideshow</p>
+          </div>
+          <div>
+            <img
+              class="shadow w-100"
+              src="./assets/images/imgNine.png"
+              alt=""
+            />
+            <p class="text-center my-2 fw-semibold">Live Car Cover</p>
+          </div>
+          <div>
+            <img class="shadow w-100" src="./assets/images/imgTen.png" alt="" />
+            <p class="text-center my-2 fw-semibold">Electric Car For Sale</p>
+          </div>
+        </div>
+        <div class="shadow rounded bottom__template p-2 my-4">
+          <div class="d-flex justify-content-between  align-items-center">
+            <h4 class="fw-bold">My Templates</h4>
+            <a
+              class="text-decoration-none py-2 px-3 fw-semibold rounded-pill primary__color primary__border secondary__bg"
+              href="#"
+              >Create Template</a
+            >
+          </div>
+          <div class="divider w-100 my-3"></div>
+          <div class="d-flex align-items-center gap-4 justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <input class="primary__border ratio__input" type="radio" />
+              <h6 class="mb-0 text-nowrap">First Test</h6>
+              <a
+                class="py-1 px-3 rounded-pill secondary__bg text-nowrap primary__color text-decoration-none fw-semibold"
+                href="#"
+                >ID: 2121b08f-350a-4811-984e-c3c83c516f3a</a
+              >
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <button class="action__btn">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+              <button class="action__btn">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <button class="action__btn">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <div class="divider w-100 my-3"></div>
+          <div class="d-flex align-items-center gap-4 justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <input class="primary__border ratio__input" type="radio" />
+              <h6 class="mb-0 text-nowrap">Second Test</h6>
+              <a
+                class="py-1 px-3 text-nowrap rounded-pill secondary__bg primary__color text-decoration-none fw-semibold"
+                href="#"
+                >ID: 2121b08f-350a-4811-984e-c3c83c516f3a</a
+              >
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <button class="action__btn">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+              <button class="action__btn">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <button class="action__btn">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!------------------------------------------ Main Content End ----------------------------------------------->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/337002c4cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/custom.js"></script>
+  </body>
+</html>
