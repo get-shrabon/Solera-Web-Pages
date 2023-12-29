@@ -205,10 +205,13 @@ main .dropdown {
 .gellary__header .side__navbar {
   padding: 180px 40px 0px 0px;
 }
+
 .gellary__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  z-index: -1;
+  position: relative;
 }
 .image__actions {
   position: absolute;
