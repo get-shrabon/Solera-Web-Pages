@@ -127,10 +127,12 @@ body {
   left: 0;
   z-index: -1;
 }
+
 .side__bg {
   border: 0.5px dashed rgba(109, 110, 112, 0.5);
   background: linear-gradient(180deg, #602c80 0%, #2e2f78 100%);
   opacity: 1 !important;
+  width: fit-content;
 }
 .arrow__btn {
   position: absolute;
@@ -144,8 +146,7 @@ body {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
-#hiddenArrow{
-
+#hiddenArrow {
   position: absolute;
   right: -42px;
   margin-top: -50px;
@@ -162,6 +163,7 @@ body {
   color: var(--primary-color) !important;
   font-weight: 700;
 }
+
 .sideIcon .nav_title {
   display: none;
 }
@@ -205,13 +207,16 @@ main .dropdown {
 .gellary__header .side__navbar {
   padding: 180px 40px 0px 0px;
 }
+.gellary__header {
+position: relative;
+z-index: 100;
+}
 
 .gellary__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  z-index: -1;
-  position: relative;
+
 }
 .image__actions {
   position: absolute;
