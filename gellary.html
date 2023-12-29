@@ -11,8 +11,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="assets/responsive.css" />
   </head>
   <body>
     <header>
@@ -63,32 +66,47 @@
       </div>
       <nav class="navbar bg-white navbar-expand-lg main__navbar">
         <div class="container-fluid">
-            <div class="dropdown d-none top__hidden__nav">
-              <button
-                class="topnav__button dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-               <span class="navbar-toggler-icon"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"><img src="./assets/images/icons/Dashboard.png" alt="" />
-              Dashboard</a></li>
-                <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-qrcode"></i></span> Studio</a></li>
-                <li>
-                  <a class="dropdown-item" href="#"><img src="./assets/images/icons/Renders.png" alt="" /> Renders</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"><img src="./assets/images/icons/Integrations.png" alt="" />
-              Integrations</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"><img src="./assets/images/icons/Workflow.png" alt="" />
-              Workflow</a>
-                </li>
-              </ul>
-            </div>
+          <div class="dropdown d-none top__hidden__nav">
+            <button
+              class="topnav__button dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="./assets/images/icons/Dashboard.png" alt="" />
+                  Dashboard</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span><i class="fa-solid fa-qrcode"></i></span> Studio</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="./assets/images/icons/Renders.png" alt="" />
+                  Renders</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="./assets/images/icons/Integrations.png" alt="" />
+                  Integrations</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="./assets/images/icons/Workflow.png" alt="" />
+                  Workflow</a
+                >
+              </li>
+            </ul>
+          </div>
           <a class="navbar-brand" href="#"
             ><img src="./assets/images/logo.png" alt=""
           /></a>
@@ -100,7 +118,11 @@
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <img class="rounded-circle" src="./assets/images/profile.png" alt="">
+            <img
+              class="rounded-circle"
+              src="./assets/images/profile.png"
+              alt=""
+            />
           </button>
           <div
             class="offcanvas offcanvas-end"
@@ -170,7 +192,12 @@
         <span id="arrow" class="arrow__btn"
           ><i class="fa-solid fa-angle-left"></i
         ></span>
-        <ul id="side__nav"
+        <span class="d-none" id="hiddenArrow"
+          ><i class="fa-solid fa-angle-right"></i
+        ></span>
+        
+        <ul
+          id="side__nav"
           class="side__nav__items list__style__none d-flex flex-column gap-4 pl-0"
         >
           <li>
@@ -185,14 +212,16 @@
             <a
               class="text-decoration-none d-flex align-items-center active__sideNav secondary__color gap-2"
               href="#"
-              ><span><i class="fa-solid fa-qrcode side-icons"></i></span> <span class="nav_title">Studio</span></a
+              ><span><i class="fa-solid fa-qrcode side-icons"></i></span>
+              <span class="nav_title">Studio</span></a
             >
           </li>
           <li>
             <a
               class="text-decoration-none d-flex align-items-center secondary__color gap-2"
               href="#"
-              ><i class="fa-solid fa-draw-polygon side-icons"></i> <span class="nav_title">Renders</span></a
+              ><i class="fa-solid fa-draw-polygon side-icons"></i>
+              <span class="nav_title">Renders</span></a
             >
           </li>
           <li>
@@ -267,89 +296,218 @@
           </div>
         </div>
         <div class="divider w-100 my-3"></div>
-        <div class="d-flex align-items-center justify-content-between sm-flex-column">
+        <div
+          class="d-flex align-items-center justify-content-between sm-flex-column"
+        >
           <h5 class="fw-bold">Templates you might like</h5>
           <div class="d-flex align-items-center gap-3">
             <a
-              class="text-decoration-none bg-white py-2 px-3 rounded-circle shadow primary__color"
+              class="text-decoration-none bg-white py-2 px-3 swiper-next rounded-circle shadow primary__color"
               href="#"
               ><i class="fa-solid fa-angle-left"></i
             ></a>
             <a
-              class="text-decoration-none bg-white py-2 px-3 rounded-circle shadow primary__color"
+              class="text-decoration-none bg-white py-2 px-3 swiper-prev rounded-circle shadow primary__color"
               href="#"
               ><i class="fa-solid fa-angle-right"></i
             ></a>
           </div>
         </div>
-        <div class="studio__grid mt-4">
-          <div>
-            <img class="shadow w-100" src="./assets/images/imgOne.png" alt="" />
-            <p class="text-center my-2 fw-semibold">Intro Car Streaming</p>
-          </div>
-          <div>
-            <img class="shadow w-100" src="./assets/images/imgTwo.png" alt="" />
-            <p class="text-center my-2 fw-semibold">Tutorial automotriz</p>
-          </div>
-          <div>
-            <img
-              class="shadow w-100"
-              src="./assets/images/imgThree.png"
-              alt=""
-            />
-            <p class="text-center my-2 fw-semibold">Today’s Deal</p>
-          </div>
-          <div>
-            <img
-              class="shadow w-100"
-              src="./assets/images/imgFour.png"
-              alt=""
-            />
-            <p class="text-center my-2 fw-semibold">Car Walk Around</p>
-          </div>
-          <div>
-            <img
-              class="shadow w-100"
-              src="./assets/images/imgFive.png"
-              alt=""
-            />
-            <p class="text-center my-2 fw-semibold">Automotive Testimonial</p>
-          </div>
-          <div>
-            <img class="shadow w-100" src="./assets/images/imgSix.png" alt="" />
-            <p class="text-center my-2 fw-semibold">Best Car For Sale</p>
-          </div>
-          <div>
-            <img
-              class="shadow w-100"
-              src="./assets/images/imgSeven.png"
-              alt=""
-            />
-            <p class="text-center my-2 fw-semibold">Car Dealer Sale</p>
-          </div>
-          <div>
-            <img
-              class="shadow w-100"
-              src="./assets/images/imgEight.png"
-              alt=""
-            />
-            <p class="text-center my-2 fw-semibold">Car Dealer Slideshow</p>
-          </div>
-          <div>
-            <img
-              class="shadow w-100"
-              src="./assets/images/imgNine.png"
-              alt=""
-            />
-            <p class="text-center my-2 fw-semibold">Live Car Cover</p>
-          </div>
-          <div>
-            <img class="shadow w-100" src="./assets/images/imgTen.png" alt="" />
-            <p class="text-center my-2 fw-semibold">Electric Car For Sale</p>
+        <div class="swiper cardSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="studio__grid mt-4">
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgOne.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Intro Car Streaming
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgTwo.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Tutorial automotriz
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgThree.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Today’s Deal</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgFour.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Car Walk Around</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgFive.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Automotive Testimonial
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgSix.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Best Car For Sale</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgSeven.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Car Dealer Sale</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgEight.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Car Dealer Slideshow
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgNine.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Live Car Cover</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgTen.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Electric Car For Sale
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="studio__grid mt-4">
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgOne.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Intro Car Streaming
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgTwo.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Tutorial automotriz
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgThree.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Today’s Deal</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgFour.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Car Walk Around</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgFive.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Automotive Testimonial
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgSix.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Best Car For Sale</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgSeven.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Car Dealer Sale</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgEight.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Car Dealer Slideshow
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgNine.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">Live Car Cover</p>
+                </div>
+                <div>
+                  <img
+                    class="shadow w-100"
+                    src="./assets/images/imgTen.png"
+                    alt=""
+                  />
+                  <p class="text-center my-2 fw-semibold">
+                    Electric Car For Sale
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="shadow rounded bottom__template p-2 my-4">
-          <div class="d-flex justify-content-between  align-items-center">
+          <div class="d-flex justify-content-between align-items-center">
             <h4 class="fw-bold">My Templates</h4>
             <a
               class="text-decoration-none py-2 px-3 fw-semibold rounded-pill primary__color primary__border secondary__bg"
@@ -407,7 +565,8 @@
       </div>
     </main>
     <!------------------------------------------ Main Content End ----------------------------------------------->
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

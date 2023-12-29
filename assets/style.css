@@ -126,7 +126,6 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  overflow-x: hidden;
 }
 .side__bg {
   border: 0.5px dashed rgba(109, 110, 112, 0.5);
@@ -145,15 +144,28 @@ body {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
+#hiddenArrow{
+
+  position: absolute;
+  right: -42px;
+  margin-top: -50px;
+  background-color: #e5e0ef;
+  padding: 5px 15px;
+  font-weight: 800;
+  cursor: pointer;
+  color: var(--primary-color);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
 .active__sideNav {
   color: var(--primary-color) !important;
   font-weight: 700;
 }
-.sideIcon .nav_title{
-display: none;
+.sideIcon .nav_title {
+  display: none;
 }
-.sideIcon li a i{
+.sideIcon li a i {
   font-size: 25px;
 }
 header {
@@ -180,6 +192,9 @@ main .dropdown {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
+}
+.swiper {
+  z-index: -1;
 }
 /******************************************** Main Section All Style End ******************************************** */
 
@@ -229,23 +244,26 @@ main .dropdown {
   z-index: 10;
 }
 .gellary__btn .btn__title {
-  padding: 5px 10px;
+  padding: 5px 25px 5px 10px;
   background-color: white;
-  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
   font-size: 15px;
   position: relative;
-  left: 20px;
+  left: 30px;
   visibility: hidden;
   transition: 0.3s all ease-in-out;
   z-index: -0;
 }
 .gellary__btn:hover .btn__title {
   visibility: unset !important;
-  left: 0;
+  left: 20px;
 }
- .gellary__grid p{
+.gellary__grid p {
   margin-top: 5px;
- }
+}
 /*****************************************************************************************************************************
                                                   Gellary Page All Style End 
  **************************************************************************************************************************** */
@@ -256,7 +274,7 @@ main .dropdown {
   .top__hidden__nav {
     display: unset !important;
   }
-     .offcanvas-body .navbar-nav{
+  .offcanvas-body .navbar-nav {
     gap: 30px !important;
   }
   .navbar-brand img {
@@ -288,21 +306,20 @@ main .dropdown {
   .side__navbar {
     display: none;
   }
-    .gellary__btn .action__icon {
+  .gellary__btn .action__icon {
     width: 50px;
     height: 50px;
   }
-  .gellary__items{
+  .gellary__items {
     z-index: -1;
   }
-
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .navbar-nav .nav-item .nav__profile {
     display: unset !important;
     flex-direction: column !important;
   }
-   .offcanvas-body .navbar-nav{
+  .offcanvas-body .navbar-nav {
     gap: 30px !important;
   }
   .side__navbar {
@@ -325,21 +342,20 @@ main .dropdown {
     padding-left: 200px;
     padding-right: 10px;
   }
-  .main__container{
+  .main__container {
     margin-top: 100px;
   }
-  .gellary__items{
+  .gellary__items {
     z-index: -1;
   }
-  .md-flex-cloumn{
+  .md-flex-cloumn {
     flex-direction: column;
     align-items: start !important;
     gap: 20px;
   }
- 
 }
 
-@media screen and (min-width:2000px) {
+@media screen and (min-width: 2000px) {
   .gellary__btn .action__icon {
     width: 50px;
     height: 50px;
